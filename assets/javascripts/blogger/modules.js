@@ -1,4 +1,3 @@
-import 'templates';
 import App from 'app';
 
 import PostController from './controllers/post_controller';

@@ -1,10 +1,11 @@
 exports.config = {
   modules: [
+    // misc
     'jshint',
     'bower',
-    'combine',
 
     // compilers
+    //'ember-module-import',
     'es6-module-transpiler',
     'copy',
     'ember-handlebars',
@@ -17,6 +18,7 @@ exports.config = {
     'server-reload',
 
     // packaging
+    'combine',
     'minify-js',
     'minify-css',
     'minify-img',
@@ -65,5 +67,11 @@ exports.config = {
       compileWith: "handlebars",
       extension: "hbs"
     }
+  },
+  emberModuleImport: {
+    apps: [{
+      namespace: "blogger",
+      manifestFile: "modules"
+    }]
   }
 };

@@ -3,8 +3,8 @@ require(['common'], function() {
   /*
     Application entry point.
   */
-  require(['ember', 'app', 'blogger/router', 'blogger/modules'], function( Ember, App, routes ) {
-    // Expose Ember App globally, because it's convenient at runtime for looking
+  require(['ember', 'app', 'blogger/router', 'blogger/modules', 'templates'], function( Ember, App, routes ) {
+    // Expose Ember App globally because it's convenient at runtime for looking
     // things up through the console, e.g.: `App.__container__.lookup('route:index')`
     App = App.default;
     window.App = App;

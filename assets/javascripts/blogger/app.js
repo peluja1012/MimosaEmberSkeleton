@@ -1,12 +1,6 @@
 import Ember from 'ember';
 
-var App = Ember.Application.create({
-  // LOG_ACTIVE_GENERATION: true,
-  // LOG_MODULE_RESOLVER: true,
-  // LOG_TRANSITIONS: true,
-  // LOG_VIEW_LOOKUPS: true
-});
-
+var App = Ember.Application.create({});
 App.deferReadiness();
 
 export default App;

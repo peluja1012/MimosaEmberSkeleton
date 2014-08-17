@@ -5,7 +5,7 @@ exports.config = {
     'bower',
 
     // compilers
-    //'ember-module-import',
+    'ember-module-import',
     'es6-module-transpiler',
     'copy',
     'ember-handlebars',
@@ -45,6 +45,12 @@ exports.config = {
     emberPath: "ember",
     helpers:["blogger/helpers/helpers"]
   },
+  emberModuleImport: {
+    apps: [{
+      namespace: "blogger",
+      manifestFile: "modules"
+    }]
+  },
   template: {
     nameTransform: /.*\/templates\//,
     writeLibrary: false,
@@ -67,11 +73,5 @@ exports.config = {
       compileWith: "handlebars",
       extension: "hbs"
     }
-  },
-  emberModuleImport: {
-    apps: [{
-      namespace: "blogger",
-      manifestFile: "modules"
-    }]
   }
 };

@@ -48,7 +48,8 @@ exports.config = {
   emberModuleImport: {
     apps: [{
       namespace: "blogger",
-      manifestFile: "modules"
+      manifestFile: "modules",
+      additional: ["router"]
     }]
   },
   template: {

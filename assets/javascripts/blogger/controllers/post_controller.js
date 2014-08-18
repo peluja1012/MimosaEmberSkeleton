@@ -1,7 +1,6 @@
 import Ember from 'ember';
-import App from 'app';
 
-App.PostController = Ember.ObjectController.extend({
+var PostController = Ember.ObjectController.extend({
   isEditing: false,
 
   actions: {
@@ -14,3 +13,5 @@ App.PostController = Ember.ObjectController.extend({
     }
   }
 });
+
+export default PostController;

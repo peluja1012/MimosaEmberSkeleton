@@ -1,10 +1,12 @@
-var routes = function(Router) {
-  Router.map(function() {
-    this.resource('about');
-    this.resource('posts', function() {
-      this.resource('post', { path: ':post_id' });
-    });
-  });
-};
+import Ember from 'ember';
 
-export default routes;
+var Router = Ember.Router.extend();
+
+Router.map(function() {
+  this.resource('about');
+  this.resource('posts', function() {
+    this.resource('post', { path: ':post_id' });
+  });
+});
+
+export default Router;

@@ -1,4 +1,5 @@
 exports.config = {
+  minMimosaVersion:"2.3.1",
   modules: [
     // misc
     'jshint',

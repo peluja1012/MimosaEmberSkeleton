@@ -1,4 +1,5 @@
 node_modules
 public
-.mimosa
+.mimosa/*
+!mimosa/testemQUnit/runner.html
 dist

@@ -18,6 +18,9 @@ exports.config = {
     'server',
     'server-reload',
 
+    // testing
+    'testem-qunit',
+
     // packaging
     'combine',
     'minify-js',
@@ -75,5 +78,9 @@ exports.config = {
       compileWith: "handlebars",
       extension: "hbs"
     }
+  },
+  testemQUnit: {
+    executeDuringWatch: false,
+    safeAssets: ['runner.html']
   }
 };

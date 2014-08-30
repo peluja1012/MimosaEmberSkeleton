@@ -81,6 +81,6 @@ exports.config = {
   },
   testemQUnit: {
     executeDuringWatch: false,
-    safeAssets: ['runner.html']
+    safeAssets: ['runner.html', 'run-tests.js', 'ember-qunit']
   }
 };

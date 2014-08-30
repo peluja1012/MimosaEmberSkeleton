@@ -3,7 +3,7 @@ import startApp from 'tests/helpers/start_app';
 
 var App;
 
-module('Acceptances - Posts', {
+window.module('Acceptances - Posts', {
   setup: function() {
     App = startApp();
   },
@@ -12,7 +12,7 @@ module('Acceptances - Posts', {
   }
 });
 
-test("displays all recent posts", function() {
+window.test("displays all recent posts", function() {
   expect(1);
 
   visit('/posts');

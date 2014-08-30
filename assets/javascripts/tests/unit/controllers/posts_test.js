@@ -1,9 +1,9 @@
 import Ember from 'ember';
-import { test, moduleFor } from 'vendor/ember-qunit/main';
+//import { test, moduleFor } from 'vendor/ember-qunit/main';
 
-moduleFor('controller:post', "Unit - PostController");
+window.moduleFor('controller:post', "Unit - PostController");
 
-test('#init', function() {
+window.test('#init', function() {
   expect(1);
 
   var controller = this.subject();
@@ -11,7 +11,7 @@ test('#init', function() {
   equal(controller.get('isEditing'), false, "`isEditing` is false by default");
 });
 
-test('#edit', function() {
+window.test('#edit', function() {
   expect(1);
 
   var controller = this.subject();
@@ -20,7 +20,7 @@ test('#edit', function() {
   equal(controller.get('isEditing'), true, "Sets `isEditing` to true");
 });
 
-test('#doneEdit', function() {
+window.test('#doneEdit', function() {
   expect(1);
 
   var controller = this.subject();

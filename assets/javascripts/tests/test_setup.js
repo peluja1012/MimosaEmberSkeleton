@@ -4,5 +4,5 @@ import startApp from 'tests/helpers/start_app';
 
 export default function() {
   var App = startApp();
-  EmberQUnit.setResolver(Ember.DefaultResolver.create({ namespace: App }));
+  window.setResolver(Ember.DefaultResolver.create({ namespace: App }));
 }

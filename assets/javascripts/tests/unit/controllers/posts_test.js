@@ -1,13 +1,9 @@
-import Ember from 'ember';
-//import { test, moduleFor } from 'vendor/ember-qunit/main';
-
 moduleFor('controller:post', "Unit - PostController");
 
 test('#init', function() {
   expect(1);
 
   var controller = this.subject();
-
   equal(controller.get('isEditing'), false, "`isEditing` is false by default");
 });
 

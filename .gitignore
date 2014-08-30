@@ -1,6 +1,6 @@
 node_modules
 public
-.mimosa/*
-!.mimosa/testemQUnit/runner.html
-!.mimosa/testemQUnit/run-tests.js
 dist
+.mimosa/bower/
+.mimosa/emberModuleImport/
+.mimosa/require/

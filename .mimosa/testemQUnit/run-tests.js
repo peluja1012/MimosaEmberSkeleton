@@ -22,12 +22,10 @@ require(['ember'], function() {
     require.config({"baseUrl": "/js"});
 
     // bring in app, templates and testem itself
-    require(['app', 'templates', '../testem'], function() {
-      require(['tests/test_setup'], function(testSetup) {
-        testSetup['default']();
-        require(window.MIMOSA_TEST_SPECS, function(module) {
-          QUnit.start();
-        });
+    require(['tests/test_setup', 'templates', '../testem'], function(testSetup) {
+      (testSetup['default'] || testSetup)();
+      require(window.MIMOSA_TEST_SPECS, function(module) {
+        QUnit.start();
       });
     });
   });

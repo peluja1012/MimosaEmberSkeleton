@@ -64,6 +64,7 @@
   "onevar"        : false,
   "passfail"      : false,
   "white"         : false,
+  "qunit"         : true,
   "globals"       : {
     "define"     :true,
     "Highcharts" :true,
@@ -76,6 +77,10 @@
     "after"      :true,
     "before"     :true,
     "it"         :true,
-    "should"     :true
+    "should"     :true,
+    "setResolver":true,
+    "moduleFor"  :true,
+    "moduleForComponent": true,
+    "moduleForModel": true
   }
 }

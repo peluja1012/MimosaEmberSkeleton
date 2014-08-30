@@ -21,9 +21,12 @@ require(['ember'], function() {
     // point back at the app for all other things
     require.config({"baseUrl": "/js"});
 
-    // bring in app, templates and testem itself
-    require(['tests/test_setup', 'templates', '../testem'], function(testSetup) {
-      (testSetup['default'] || testSetup)();
+    // test-setup, templates, testem
+    require(['tests/create_test_app', 'templates', '../testem'], function(testApp) {
+
+      var App = (testApp['default'] || testApp)();
+      setResolver(Ember.DefaultResolver.create({ namespace: App }));
+
       require(window.MIMOSA_TEST_SPECS, function(module) {
         QUnit.start();
       });

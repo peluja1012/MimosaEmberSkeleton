@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import modules from 'blogger/modules';
+import 'templates';
 
 var App = Ember.Application.extend(modules);
 

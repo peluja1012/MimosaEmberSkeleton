@@ -8,6 +8,7 @@ exports.config = {
     // compilers
     'ember-module-import',
     'es6-module-transpiler',
+    // 'esperanto' // try this at some point instead of es6 mod transpiler
     'copy',
     'ember-handlebars',
     'sass',

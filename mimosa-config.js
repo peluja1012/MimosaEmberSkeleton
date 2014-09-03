@@ -5,8 +5,11 @@ exports.config = {
     'jshint',
     'bower',
 
-    // compilers
+    // ember specific stuff
     'ember-module-import',
+    'ember-test',
+
+    // compilers
     'es6-module-transpiler',
     // 'esperanto' // try this at some point instead of es6 mod transpiler
     'copy',
@@ -18,9 +21,6 @@ exports.config = {
     'live-reload',
     'server',
     'server-reload',
-
-    // testing
-    'testem-qunit',
 
     // packaging
     'combine',

@@ -23,7 +23,7 @@ exports.config = {
     'minify-js',
     'minify-css',
     'minify-img',
-    'require',
+    'require@3.0.0',
     'web-package',
     'handlebars-on-window',
     'fix-rjs-ember'

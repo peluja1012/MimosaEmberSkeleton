@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import Application from 'app';
+import modules from 'blogger/modules';
 
 export default function(attrs) {
   var App;
@@ -11,7 +12,7 @@ export default function(attrs) {
   }, attrs);
 
   Ember.run(function() {
-    App = Application.create(attributes);
+    App = Application.createWithMixins(modules, attributes);
 
     App.Router.reopen({
       location: 'none'

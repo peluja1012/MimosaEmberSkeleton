@@ -7,7 +7,8 @@ exports.config = {
 
     // ember specific stuff
     'ember-module-import',
-    'ember-test',
+    //'ember-test',
+    'testem-qunit',
 
     // compilers
     'es6-module-transpiler',

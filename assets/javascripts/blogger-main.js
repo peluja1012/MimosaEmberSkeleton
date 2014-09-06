@@ -1,5 +1,6 @@
 require(['common'], function() {
-  require(['app'], function(App) {
-    window.App = App['default'].create();
+  require(['app', 'blogger/modules', 'templates'], function(App, modules) {
+    App = App['default'] || App;
+    window.Blogger = App.createWithMixins(modules);
   });
 });

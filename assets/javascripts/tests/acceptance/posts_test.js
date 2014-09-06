@@ -1,11 +1,11 @@
 import Ember from 'ember';
-import createApp from 'tests/create_test_app';
+import testApp from 'tests/test_app';
 
 var App;
 
 module('Acceptances - Posts', {
   setup: function() {
-    App = createApp();
+    App = testApp();
   },
   teardown: function() {
     Ember.run(App, 'destroy');

@@ -8,7 +8,7 @@ require.config(window.MIMOSA_TEST_REQUIRE_CONFIG);
 // and ember is in the app, so bring it in
 // CONFIG
 // config.emberTest.emberPath
-require(['ember'], function() {
+require(['ember'], function(Ember) {
 
   // change baseUrl to point to .mimosa/testemQUnit to
   // to pull in ember-qunit, tests assets not in app
@@ -26,15 +26,13 @@ require(['ember'], function() {
     // CONFIG
     // config.emberTest.testAppFactory
     // config.emberTest.testPrerequisitePaths (shown here as being empty)
-    require(['tests/create_test_app', '../testem'], function(testApp) {
+    require(['tests/test_app', 'templates', '../testem'], function(testApp) {
+      testApp = testApp['default'] || testApp;
+      setResolver(Ember.DefaultResolver.create({ namespace: testApp() }));
 
-      var App = (testApp['default'] || testApp)();
-      setResolver(Ember.DefaultResolver.create({ namespace: App }));
-
-      require(window.MIMOSA_TEST_SPECS, function(module) {
+      require(window.MIMOSA_TEST_SPECS, function() {
         QUnit.start();
       });
     });
   });
 });
-

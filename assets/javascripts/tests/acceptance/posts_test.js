@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import testApp from 'tests/test_app';
+import testApp from 'tests/create_test_app';
 
 var App;
 

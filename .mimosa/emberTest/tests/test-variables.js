@@ -1,11 +1,13 @@
-window.MIMOSA_TEST_REQUIRE_CONFIG = {
+window.Mimosa = window.Mimosa || {};
+
+window.Mimosa.EmberTest = {
+  requireConfig: {
   "baseUrl": "/js",
   "paths": {
     "app": "blogger/app",
     "jquery": "vendor/jquery/jquery",
     "handlebars": "vendor/handlebars/handlebars",
     "ember": "vendor/ember/ember",
-    "lodash": "vendor/lodash/lodash.compat",
     "showdown": "vendor/showdown/showdown",
     "moment": "vendor/moment/moment"
   },
@@ -24,8 +26,9 @@ window.MIMOSA_TEST_REQUIRE_CONFIG = {
       "exports": "Showdown"
     }
   }
-};
-window.MIMOSA_TEST_SPECS = [
+},
+  specFiles: [
   "tests/acceptance/posts_test",
   "tests/unit/controllers/posts_test"
-];
+]
+};

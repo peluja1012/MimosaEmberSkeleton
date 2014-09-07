@@ -1,4 +1,6 @@
 import Ember from 'ember';
+// Move templates out into blogger-main.js eventually
+import 'templates';
 
 var App = Ember.Application.extend();
 

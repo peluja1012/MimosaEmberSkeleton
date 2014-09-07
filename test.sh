@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ "$1" == ci ]; then
-  testem ci --file ".mimosa/testemQUnit/testem.json"
+  testem ci --file ".mimosa/emberTest/testem.json"
 else
-  testem --file ".mimosa/testemQUnit/testem.json"
+  testem --file ".mimosa/emberTest/testem.json"
 fi

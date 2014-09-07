@@ -7,8 +7,7 @@ exports.config = {
 
     // ember specific stuff
     'ember-module-import',
-    //'ember-test',
-    'testem-qunit',
+    'ember-test',
 
     // compilers
     'es6-module-transpiler',
@@ -58,6 +57,17 @@ exports.config = {
       additional: ["router"]
     }]
   },
+  emberTest: {
+    apps: [{
+      testLocation: 'tests',
+      testAppFactory: 'create_test_app',
+      stylesheetPaths: [
+        '/public/stylesheets/vendor.css',
+        '/public/stylesheets/blogger.css',
+        'http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css'
+      ]
+    }]
+  },
   template: {
     nameTransform: /.*\/templates\//,
     writeLibrary: false,
@@ -80,9 +90,5 @@ exports.config = {
       compileWith: "handlebars",
       extension: "hbs"
     }
-  },
-  testemQUnit: {
-    executeDuringWatch: false,
-    safeAssets: ['testem.json', 'runner.html', 'run-tests.js', 'ember-qunit']
   }
 };

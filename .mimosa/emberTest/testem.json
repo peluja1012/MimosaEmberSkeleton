@@ -1,8 +1,7 @@
 {
-  "test_page": ".mimosa/testemQUnit/runner.html",
   "routes": {
     "/js": "public/javascripts",
-    "/js2": ".mimosa/testemQUnit"
+    "/ember-test": ".mimosa/emberTest"
   },
   "launch_in_dev": [
     "Firefox",
@@ -10,5 +9,6 @@
   ],
   "launch_in_ci": [
     "PhantomJS"
-  ]
+  ],
+  "test_page": ".mimosa/emberTest/tests/runner.html"
 }

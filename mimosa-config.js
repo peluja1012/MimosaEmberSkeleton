@@ -62,14 +62,15 @@ exports.config = {
   },
   combine: {
     folders:[{
-      folder:"stylesheets/vendor",
-      output:"stylesheets/vendor.css"
+      folder: "stylesheets/vendor",
+      output: "stylesheets/vendor.css"
     }]
   },
   bower: {
     copy: {
       mainOverrides: {
-        showdown:["compressed/showdown.js"]
+        showdown: ["compressed/showdown.js"],
+        bootstrap: ["dist/css/bootstrap.css", "dist/js/bootstrap.js"]
       }
     }
   },

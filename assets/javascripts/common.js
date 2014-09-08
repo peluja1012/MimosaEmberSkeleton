@@ -17,7 +17,6 @@ requirejs.config({
     'jquery': 'vendor/jquery/jquery',
     'handlebars': 'vendor/handlebars/handlebars',
     'ember': 'vendor/ember/ember',
-    'lodash': 'vendor/lodash/lodash.compat',
     'showdown': 'vendor/showdown/showdown',
     'moment': 'vendor/moment/moment'
   }

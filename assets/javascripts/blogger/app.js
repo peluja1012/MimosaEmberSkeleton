@@ -1,7 +1,7 @@
 import Ember from 'ember';
-import modules from 'blogger/modules';
+import 'templates';
 
-var App = Ember.Application.extend(modules);
+var App = Ember.Application.extend();
 
 // Override didInsertElement() to trigger event to run
 // DOM-ready dependent code, like jQuery plugins

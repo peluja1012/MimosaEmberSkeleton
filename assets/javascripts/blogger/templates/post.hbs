@@ -1,9 +1,11 @@
+{{!-- feature posts-edit:start --}}
 {{#if isEditing}}
   {{partial "post/edit"}}
   <button {{action "doneEditing"}} class="btn btn-primary">Done</button>
 {{else}}
   <button {{action "edit"}} class="btn btn-primary">Edit</button>
 {{/if}}
+{{!-- feature posts-edit:end --}}
 
 <h1>{{title}}</h1>
 <h2>by {{author.name}} <small class="text-muted">({{format-date date}})</small></h2>

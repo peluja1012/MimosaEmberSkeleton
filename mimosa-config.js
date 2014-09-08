@@ -29,7 +29,10 @@ exports.config = {
     'require@3.0.0',
     'web-package',
     'handlebars-on-window',
-    'fix-rjs-ember'
+    'fix-rjs-ember',
+
+    'defeature'
+
   ],
   sass: {
     // want to use node-sass rather than ruby compiler

@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 var PostController = Ember.ObjectController.extend({
+  /* feature posts-edit:start */
   isEditing: false,
 
   actions: {
@@ -12,6 +13,7 @@ var PostController = Ember.ObjectController.extend({
       this.set('isEditing', false);
     }
   }
+  /* feature posts-edit:end */
 });
 
 export default PostController;

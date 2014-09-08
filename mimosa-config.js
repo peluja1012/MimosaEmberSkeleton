@@ -5,8 +5,11 @@ exports.config = {
     'jshint',
     'bower',
 
-    // compilers
+    // ember-specific stuff
     'ember-module-import',
+    //'ember-test',
+
+    // compilers
     'es6-module-transpiler',
     'copy',
     'ember-handlebars',

@@ -7,7 +7,7 @@ exports.config = {
 
     // ember-specific stuff
     'ember-module-import',
-    //'ember-test',
+    'ember-test',
 
     // compilers
     'es6-module-transpiler',
@@ -54,6 +54,16 @@ exports.config = {
       namespace: "blogger",
       manifestFile: "modules",
       additional: ["router"]
+    }]
+  },
+  emberTest: {
+    apps: [{
+      testLocation: 'tests',
+      testAppFactory: 'create_test_app',
+      stylesheetPaths: [
+        '/public/stylesheets/vendor.css',
+        '/public/stylesheets/blogger.css'
+      ]
     }]
   },
   template: {

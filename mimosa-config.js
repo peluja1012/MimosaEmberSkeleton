@@ -6,13 +6,13 @@ exports.config = {
     'bower',
 
     // ember-specific stuff
-    'ember-module-import',
+    'ember-module-import@0.2.0',
     //'ember-test',
 
     // compilers
     'es6-module-transpiler',
     'copy',
-    'ember-handlebars',
+    'ember-handlebars@2.0.0',
     'sass',
     'stream-copy',
 
